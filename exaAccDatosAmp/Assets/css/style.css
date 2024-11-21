@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+.mano {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Menú */
+.menu1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedores */
+.contenedor0, .contenedor1, .contenedor2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.contenedor0 {
+    flex-direction: column;
+}
+
+.bloque0, .bloque1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1% 0;
+}
+
+.bloque2 {
+    width: 30%;
+}
+
+/* Pie */
+.pie1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Controles */
+input, textarea, select {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 1% 2%;
+    margin: 1%;
+}
+
+.boton1 {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    width: 15%;
+}
+
+.boton1Inhabilitado1 {
+    background-color: #ccc;
+    color: #fff;
+    border: 1px solid #ccc;
+    width: 15%;
+}
+
+.campoArchivo1::before {
+    content: 'Seleccionar archivo';
+    background-color: #fff;
+    color: #666;
+    border-radius: 30px;
+    padding: 1% 2%;
+    margin: 1%;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.campoArchivo1:hover::before {
+    color: #000;
+}
